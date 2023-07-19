@@ -28,6 +28,6 @@ if (isNaN(userAge) || isNaN(totalKm)) {
     }
 }
 
-const totalPrice = kmPrice - discount ;
+const totalPrice = (kmPrice - discount).toFixed(2);
 
 document.getElementById("ticketPrice").innerHTML = ("il prezzo totale del tuo biglietto è " + totalPrice + "€")
