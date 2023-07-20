@@ -1,6 +1,6 @@
 // INPUT UTENTE
 
-const totalKm = parseInt(prompt("Inserisci la distanza da percorre in Km"));
+const totalKm = parseFloat(prompt("Inserisci la distanza da percorre in Km"));
 const userAge = parseInt(prompt("Inserisci la tua età", "18"));
 
 
@@ -21,10 +21,12 @@ if (isNaN(totalKm) || isNaN(userAge)) {
     if (userAge < 18) {
 
         discount = (kmPrice * 20) / 100;
+        document.getElementById("discount").innerHTML = ("hai diritto al 20% di sconto, cioè " + (kmPrice * 20) / 100)
 
     } else if (userAge >= 65) {
 
         discount = (kmPrice * 40) / 100;
+        document.getElementById("discount").innerHTML = ("hai diritto al 40% di sconto, cioè " + (kmPrice * 40) / 100)
 
     }
 }
