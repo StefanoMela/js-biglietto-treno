@@ -21,16 +21,16 @@ if (isNaN(totalKm) || isNaN(userAge)) {
     if (userAge < 18) {
 
         discount = (kmPrice * 20) / 100;
-        document.getElementById("discount").innerHTML = ("hai diritto al 20% di sconto, cioè " + (kmPrice * 20) / 100)
+        document.getElementById("discount").innerHTML = ("Hai diritto al 20% di sconto, cioè " + (kmPrice * 20) / 100)
 
     } else if (userAge >= 65) {
 
         discount = (kmPrice * 40) / 100;
-        document.getElementById("discount").innerHTML = ("hai diritto al 40% di sconto, cioè " + (kmPrice * 40) / 100)
+        document.getElementById("discount").innerHTML = ("Hai diritto al 40% di sconto, cioè " + (kmPrice * 40) / 100)
 
     }
 }
 
 const totalPrice = (kmPrice - discount).toFixed(2);
 
-document.getElementById("ticketPrice").innerHTML = ("il prezzo totale del tuo biglietto è " + totalPrice + "€")
+document.getElementById("ticketPrice").innerHTML = ("Il prezzo totale del tuo biglietto è " + totalPrice + "€")
